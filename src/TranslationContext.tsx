@@ -20,7 +20,7 @@ interface TranslatorProps {
 
 const Translator: React.FC<TranslatorProps> = ({
 	children,
-	apiKey = "AIzaSyAvJ_wpGh4APhWYu20xLSIzl2HpM3JTfIg",
+	apiKey = "Your_API_KEY",
 }) => {
 	const [lang, setLang] = useState("en");
 	const { translate } = useTranslator(lang, apiKey);
